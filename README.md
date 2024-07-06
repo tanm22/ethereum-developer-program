@@ -1,35 +1,50 @@
-**The code in this repository is a part of the Ethereum Developer Program. Kindly check the [wiki](https://github.com/ananthanir/ethereum-developer-program/wiki) to access the course content.**
-<div align="justify">
-<div align="center">
-<img src="https://github.com/ananthanir/ethereum-developer-program/blob/main/assets/images/course-name.png" alt="Ethereum History" width="100%" height="100%">
-</div>
+# Gaussian Sampler with Scaled Distribution
 
-***
+This Python script generates samples from a scaled Gaussian distribution within a specified interval and visualizes the distribution through a histogram overlaid with an ideal Gaussian distribution curve. It incorporates a custom the inverse error function (erfinv) for an accurate transformation of uniform samples to Gaussian samples. We also plot the ideal gaussian distribution between a and b to verify our histogram.
 
-Welcome to the **Ethereum Developer Program** offered by **Kerala Blockchain Academy**..!!
+## How to Use
 
-The Ethereum Developer Course is a 60-hour program that provides a rigorous introduction to Ethereum blockchain development. The curriculum examines Ethereum's core architecture, principles of smart contract design, and the utilisation of Web3 development tools. Students will gain proficiency in the Solidity programming language, enabling them to develop secure and efficient smart contracts that underpin decentralised applications (DApps). This course provides a comprehensive understanding of the Ethereum ecosystem, equipping students to make informed decisions as they explore its potential. Our supportive KBA community chat group will be there every step of the way. Throughout the program, students will develop a decentralised mindset, empowering students to contribute meaningfully to the Ethereum ecosystem through open-source projects, hackathons, or even the Ethereum Improvement Proposal (EIP) process.
+1. **Install Dependencies:**
+   - Ensure you have Python installed on your system.
+   - Install required dependencies using pip:
+     ```
+     pip install numpy matplotlib scipy
+     ```
 
-This course aligns with the Ethereum Foundation's commitment to decentralisation and innovation, preparing students to become active contributors to the Web3 landscape, and students will have active support from KBA for all of the above future endeavours.
+2. **Download the Code:**
+   - Download the provided Python script (gaussian_sampler.py) to your local machine.
 
-# Course Outcomes
-- **Ethereum Fundamentals Mastery**: Possess a deep understanding of the Ethereum blockchain's core principles, network architecture, and client operation.
-- **Ethereum Ecosystem Navigation**: Demonstrate a comprehensive grasp of the Ethereum ecosystem's major components, key players, and evolving trends.
-- **Solidity Proficiency**: Write secure, optimised, and well-structured smart contracts with confidence.
-- **Web3 Toolkit Expertise**: Seamlessly utilise essential tools and frameworks for developing and testing decentralised applications.
-- **Decentralised Application Architecture**: Design and implement robust and fully decentralised applications from conception to deployment.
-- **Decentralisation-First Thinking**:  Critically assess use cases to determine the true potential and benefits of decentralised solutions.
+3. **Run the Script:**
+   - Open a terminal or command prompt.
+   - Navigate to the directory containing the downloaded script.
+   - Run the script using Python:
+     ```
+     python gaussian_sampler.py
+     ```
 
-# Development Environment
-<div align="center">
-<img src="https://github.com/ananthanir/ethereum-developer-program/blob/main/assets/images/dev-environment.png" alt="Ethereum History" width="80%" height="80%">
-</div>
+4. **Follow Prompts:**
+   - Enter the lower and upper bounds of the interval as prompted by the script.(Real Numbers)
 
-# Community
-Level up together! Join our Discord, where like-minded learners connect and grow.
+5. **View Output:**
+   - The script will generate a plot displaying the histogram of the sampled distribution along with the ideal Gaussian distribution curve.
+   - The plot will also be saved as "Plots.png" in the same directory for future reference.
 
-Discord Sever: [https://discord.gg/hcAzEWNDv3](https://discord.gg/hcAzEWNDv3)
+## Required Dependencies
 
+- `numpy`: For numerical computations and array operations.
+- `matplotlib.pyplot`: For data visualization and plotting.
+- `scipy.special.erfinv`: Inverse error function for accurate transformation of uniform samples to Gaussian samples.
+- `scipy.stats.norm`: Standard normal (Gaussian) continuous random variable.
 
-</div>
+## Note
 
+- Ensure you have the necessary permissions to install Python packages and run scripts on your system.
+- Adjust the script as needed for specific use cases or requirements.
+
+## Team-members
+
+- Apoorv Tandon (220192)
+- Daksh Kumar Singh (220322)
+- Himanshu Shekhar (220454)
+- Swayamsidh Pradhan (221117)
+- Tanishq Maheshwari (221128)
